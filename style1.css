@@ -1,0 +1,554 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/***********************/
+/* custom scrolbar design */
+/***********************/
+
+::-webkit-scrollbar {
+width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+background: #e9f9e7;
+
+}
+
+::-webkit-scrollbar-thumb {
+background: #58b64f;
+border-radius: 10px;
+}
+
+/***********************/
+/* custom scrolbar design end */
+/***********************/
+
+
+/***********************/
+/* nav section  */
+/***********************/
+
+
+.navbar{
+  background: #e9f9e7;
+}
+
+.navbar-nav .nav-link {
+transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+border-radius: 10px;
+padding: 5px 10px !important;
+}
+
+.navbar-nav .nav-link:hover {
+color: #ffffff;
+background-color:#59b64f ;
+transform: scale(1.1);
+
+}
+
+.navbar-nav li a{
+  color: #59b64f;
+}
+
+.navbar-nav li a:hover{
+  color: #095a02;
+}
+.navbar .btn{
+  background: #095a02;
+  color: #fff;
+}
+.navbar .btn:hover{
+  background: #59b64f;
+  color: #fff;
+}
+.mynav {
+display: block;
+}
+/***********************/
+/* nav section end */
+/***********************/
+
+
+/***********************/
+/* mobile and tap size nav section */
+/***********************/
+
+/* OVERLAY */
+.overlay {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  background-color: rgba(66, 184, 76, 0.7);
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-slide-right {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+
+.overlay-slide-left {
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-100%);
+}
+
+
+
+nav ul li {
+  height: 10%;
+}
+nav li a {
+transition: all 0.2s ease-in-out;}
+
+nav li a {
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  margin-top: 10px !important;
+}
+
+nav li a:hover,
+nav li a:active {
+  transform: scale(1.2);
+}
+/* @media (max-width:768px) {
+  #hamburger-menu{
+   display: block !important;
+  }
+ } */
+
+/***********************/
+/* NAV SLIDE IN ANIMATION */
+/***********************/
+
+.slide-in-1 {
+  animation: slide-in 0.4s linear 0.2s both;
+}
+
+.slide-in-2 {
+  animation: slide-in 0.4s linear 0.4s both;
+}
+
+.slide-in-3 {
+  animation: slide-in 0.4s linear 0.6s both;
+}
+
+.slide-in-4 {
+  animation: slide-in 0.4s linear 0.8s both;
+}
+
+.slide-in-5 {
+  animation: slide-in 0.4s linear 1s both;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/***********************/
+/* NAV SLIDE OUT ANIMATION */
+/***********************/
+
+.slide-out-1 {
+  animation: slide-out 0.3s linear 0.5s both;
+}
+
+.slide-out-2 {
+  animation: slide-out 0.3s linear 0.4s both;
+}
+
+.slide-out-3 {
+  animation: slide-out 0.3s linear 0.3s both;
+}
+
+.slide-out-4 {
+  animation: slide-out 0.3s linear 0.2s both;
+}
+
+.slide-out-5 {
+  animation: slide-out 0.3s linear 0.1s both;
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/***********************/
+/* NAV HAMBURGER MENU ANIMATION */
+/***********************/
+
+.hamburger-menu {
+  position: fixed;
+  top: 5px;
+  right: 1rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #070707;
+  margin: 0.4rem 0;
+  transition: 0.4s;
+}
+
+.menu-bar2 {
+  width: 1.2rem;
+  margin-left: auto;
+}
+
+
+/* ROTATE FIRST BAR */
+.active .menu-bar1 {
+  transform: rotate(-45deg) translate(-0.7rem, 0.8rem);
+  background-color: white;
+}
+
+/* FADE OUT SECOND BAR */
+.active .menu-bar2 {
+  opacity: 0;
+}
+
+/* ROTATE LAST BAR */
+.active .menu-bar3 {
+  transform: rotate(45deg) translate(-0.6rem, -0.8rem);
+  background-color: white;
+}
+
+/***********************/
+/* MOBILE AND TAP SIZE NAV END */
+/***********************/
+
+/***********************/
+/* GALLERY SECTION*/
+/***********************/
+
+.gallery-pic {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.gallery-pic img {
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.gallery-pic:hover img {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+.card img{
+border: 3px solid #59b64f;
+border-radius: 20px;
+}
+/***********************/
+/* GALLERY SECTION END */
+/***********************/
+
+
+
+  /***********************/
+/* WELCOME BACKROUND   */
+/***********************/
+
+.home-bg {
+  background-image: url('./photo/Untitled\ design\ \(8\)-min.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 100vh;
+  display: flex;
+  align-items: center; */
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .home-bg {
+    margin-top: 3% !important;
+    height: 750px !important;
+  }
+
+  .wel-qut{
+    font-size: 65px !important;
+  }
+
+}
+.wel-qut{
+  font-size: 35px !important;
+}
+.appoint-btn a{
+  text-decoration: none !important;
+  color: #fff;
+
+}
+.appoint-btn{
+  font-size: 20px !important;
+
+}
+/* .home-bg {
+  position: relative;
+} */
+
+.home-text {
+  position: relative;
+  z-index: 1;
+  color: #59b64f;
+}
+
+.home-text .btn{
+  background: #095a02;
+  color: #fff;
+}
+.home-text .btn:hover{
+  background: #59b64f;
+  color: #fff;
+}
+
+  /***********************/
+/* WELCOME BACKROUND  END */
+/***********************/
+
+
+/***********************/
+/* SERVICE SECTION   */
+/***********************/
+
+.service-page{
+  color: #59b64f;
+  text-align: center;
+}
+.service-bg{
+  background: #e9f9e7;
+  color: #59b64f;
+  /* height: 100vh; */
+  position: relative;
+}
+.service-effect{
+  background: #59b64f;
+  color: #e9f9e7;
+  border-radius: 0px 0px 0px 20px;
+  position: relative;
+}
+
+.effect-1{
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background: #f8f7f7;
+  overflow: hidden;
+  border-radius: 0px 0px 0px 20px;
+  opacity: 0.3;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.service-effect:hover .effect-1{
+  width: 100%;
+  left: 0;
+}
+.service-effect-1{
+  background: #59b64f;
+  color: #e9f9e7;
+  border-radius: 0px 0px 0px 20px;
+  position: relative;
+}
+
+.effect-2{
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background: #f8f7f7;
+  overflow: hidden;
+  border-radius: 0px 0px 0px 20px;
+  opacity: 0.3;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.service-effect-1:hover .effect-2{
+  width: 100%;
+  left: 0;
+}
+.service-effect-2{
+  background: #59b64f;
+  color: #e9f9e7;
+  border-radius: 0px 0px 0px 20px;
+  position: relative;
+}
+
+.effect-3{
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background: #f8f7f7;
+  overflow: hidden;
+  border-radius: 0px 0px 0px 20px;
+  opacity: 0.3;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.service-effect-2:hover .effect-3{
+  width: 100%;
+  left: 0;
+}
+
+  /***********************/
+/*SERVICE SECTION END   */
+/***********************/
+
+@media (max-width: 400px) {
+/* #home {
+  background-size: contain !important;
+
+  margin-top: -26%;
+} */
+
+.home-text {
+  padding-top: 20px !important;
+}
+
+.wel-qut {
+  font-size: 15px !important;
+  width: 100% !important;
+}
+
+.appoint-btn {
+  font-size: 10px !important;
+  position: relative;
+  bottom: 1px !important;
+}
+
+.welcome-head {
+  font-size: 20px !important;
+  width: 100%;
+}
+
+/* #service {
+  margin-top: -170px;
+} */
+}
+ 
+
+  /***********************/
+/*BOOKING SECTION  */
+/***********************/
+
+
+.booking{
+  border: 2px solid #59b64f;
+  border-radius: 10px;
+  margin-top: 55px;
+}
+.book-head{
+color: #59b64f ;
+}
+
+.form-floating input{
+  border:1px solid #59b64f;
+}
+input{
+  border:1px solid #59b64f !important;
+}
+.form-control:focus{
+box-shadow: none !important;
+}
+.my-btn{
+background-color: #58b64f !important;
+color: #fff !important;
+padding: 10px 50px !important;
+}
+
+
+.my-btn:hover{
+  background: #095a02 !important;
+  color: #fff !important;
+}
+.con{
+  background: #e9f9e7;
+  text-align: center;
+}
+.con h1{
+  color: #58b64f;
+}
+.con input{
+  border: 1px solid #58b64f;
+ 
+  font-size: 20px;
+  color: #000;
+}
+.con .btn{
+  background: #095a02;
+  color: #fff;
+  font-size: 21px;
+  border:1px solid #e9f9e7;
+ 
+}
+
+.con .btn:hover{
+  background: #58b64f;
+  color: #fff;
+  font-size: 21px;
+}
+.act{
+  background: #58b64f;
+}
+
+.box{
+  background: #e9f9e7;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+  /***********************/
+/*BOOKING SECTION END */
+/***********************/
+
+  /***********************/
+/*FOOTER SECTION */
+/***********************/
+
+ul.social-media li{
+  list-style: none;
+  color: #e9f9e7;
+}
+ul li a{
+  text-decoration: none !important;
+  color: #e9f9e7;
+}
+
+  /***********************/
+/*FOOTER SECTION END */
+/***********************/
+
+.emptybox{
+  background-image: linear-gradient( 117deg,  rgba(123,216,96,1) 39.2%, rgba(255,255,255,1) 156.2% );
+}
+
+
